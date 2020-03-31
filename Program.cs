@@ -10,13 +10,13 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Созданеи героя класса Эльф - стрелок");
+            Console.WriteLine("Создание героя класса Эльф - стрелок");
             Hero Elf = new Hero(new ElfFactory());
             Elf.Hit();
             Elf.Run();
             Elf.WarWhoop();
             
-            Console.WriteLine("\nСозданеи героя класса Орк - воин");
+            Console.WriteLine("\nСоздание героя класса Орк - воин");
             Hero Orc = new Hero(new OrcFactory());
             Orc.Hit();
             Orc.Run();
@@ -37,7 +37,6 @@ namespace AbstractFactory
     {
         public abstract void Move();
     }
-
 
     // абстрактный класс - боевой клич
     abstract class WarWhoop
